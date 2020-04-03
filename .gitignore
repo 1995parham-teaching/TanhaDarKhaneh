@@ -1,6 +1,6 @@
 
-# Created by https://www.gitignore.io/api/c,jetbrains+all
-# Edit at https://www.gitignore.io/?templates=c,jetbrains+all
+# Created by https://www.gitignore.io/api/c,jetbrains+all,cmake
+# Edit at https://www.gitignore.io/?templates=c,jetbrains+all,cmake
 
 ### C ###
 # Prerequisites
@@ -55,6 +55,23 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+### CMake ###
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+### CMake Patch ###
+# External projects
+*-prefix/
 
 ### JetBrains+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
@@ -142,5 +159,5 @@ modules.xml
 # Sonarlint plugin
 .idea/sonarlint
 
-# End of https://www.gitignore.io/api/c,jetbrains+all
+# End of https://www.gitignore.io/api/c,jetbrains+all,cmake
 
