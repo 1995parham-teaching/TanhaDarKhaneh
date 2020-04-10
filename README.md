@@ -5,6 +5,11 @@ Coronavirus makes all of us stay home and cancel all classes.
 Here we want to demonstrate C programming with example projects and codes.
 These codes have companion videos that are available on youtube.
 
+## Review
+These videos reviews on some important points of C programming practically.
+
+- Functions
+
 ## Projects
 ### Phone Book :iphone:
 Phone book application stores user identification and phones as integers.
