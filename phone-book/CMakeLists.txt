@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
-project(TanhaDarKhaneh C)
+project(phone-book C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(TanhaDarKhaneh main.c)
+add_executable(phone-book main.c)

@@ -75,8 +75,6 @@ int main() {
   long long phone;
 
   while (is_run) {
-    int i;
-
     int choice = menu();
 
     switch (choice) {
