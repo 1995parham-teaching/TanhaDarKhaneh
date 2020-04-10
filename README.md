@@ -6,7 +6,7 @@ Here we want to demonstrate C programming with example projects and codes.
 These codes have companion videos that are available on youtube.
 
 ## Projects
-### Phone Book
+### Phone Book :iphone:
 Phone book application stores user identification and phones as integers.
 It has an uncomplicated menu, and users can add, get, and remove entities.
 
