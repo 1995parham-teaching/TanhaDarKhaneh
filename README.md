@@ -8,7 +8,7 @@ These codes have companion videos that are available on youtube.
 ## Review
 These videos reviews on some important points of C programming practically.
 
-- Functions
+- Functions [Video](https://youtu.be/4TNvD4F5DnU)
 
 ## Projects
 ### Phone Book :iphone:
