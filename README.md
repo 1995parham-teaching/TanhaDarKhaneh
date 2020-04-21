@@ -1,4 +1,4 @@
-# TanhaDarKhaneh
+# Tanha Dar Khaneh (a.k.a Home Alone)
 [![Drone (cloud)](https://img.shields.io/drone/build/1995parham/TanhaDarKhaneh.svg?style=flat-square)](https://cloud.drone.io/1995parham/TanhaDarKhaneh)
 
 ## Introduction
