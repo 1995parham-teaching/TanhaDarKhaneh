@@ -10,6 +10,7 @@ These videos reviews on some important points of C programming practically.
 
 - Functions [Video](https://youtu.be/4TNvD4F5DnU)
 - Recursion [Video](https://youtu.be/r4U-2oM2lEQ)
+- Arrays [Video]()
 
 ## Projects
 ### Phone Book :iphone:
