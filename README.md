@@ -13,6 +13,7 @@ These videos reviews on some important points of C programming practically.
 - Functions [Video](https://youtu.be/4TNvD4F5DnU)
 - Recursion [Video](https://youtu.be/r4U-2oM2lEQ)
 - Arrays [Video](https://youtu.be/6IneTl2VjWw)
+- Pointers [Video](https://youtu.be/dTAJAAG8Yvg)
 - Linked-List [Video](https://drive.google.com/file/d/1n_gcB7vvCNftk1ZCwfm0PBywiTxDDSHV/view?usp=drivesdk) - Special Thanks to [Saman Hoseini](https://github.com/saman2000hoseini)
 
 ## Projects
