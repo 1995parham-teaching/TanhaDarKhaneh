@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//   address of [ address of [0,0] ] (arr)
+//         |
+//        \/
+// [ address of [ 0,0 ] ] -> [ 0,0 ] [ 0,1 ] [ 0,2 ]
+// [ address of [ 1,0 ] ] -> [ 1,0 ] [ 1,1 ] [ 1,2 ]
 int main() {
   int n;
   int m;
