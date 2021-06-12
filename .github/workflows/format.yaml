@@ -10,4 +10,4 @@ jobs:
       - uses: actions/checkout@v2
       - run: sudo apt-get install -y --no-install-recommends clang-format
       - name: clang-format
-        run: find . -type f -name '*.c' -exec clang-format {} +
+        run: find . -type f -name '*.c' -exec clang-format --Werror {} +
