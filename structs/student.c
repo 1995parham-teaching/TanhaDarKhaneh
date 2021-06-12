@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-
 struct student {
   int id;
   char first_name[200];
@@ -17,9 +16,7 @@ void student_set_first_name(struct student *std, const char *name) {
   strcpy(std->first_name, name);
 }
 
-void student_set_id(struct student *std, int id) {
-  std->id = id;
-}
+void student_set_id(struct student *std, int id) { std->id = id; }
 
 int main() {
   struct student std = {9231058, "Parham", "Alvani"};

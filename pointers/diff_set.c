@@ -4,7 +4,6 @@
 // B = {4, 5, 6}
 // A - B = {1, 2, 3}
 
-
 // int search(int target, int arr[], int size)
 // is the same as
 // int search(int target, int *arr, int size)
@@ -38,7 +37,8 @@ int main() {
 
   int res[100];
 
-  int res_size = diff_set(A, sizeof(A) / sizeof(int), B, sizeof(B) / sizeof(int), res);
+  int res_size =
+      diff_set(A, sizeof(A) / sizeof(int), B, sizeof(B) / sizeof(int), res);
 
   for (int i = 0; i < res_size; i++) {
     printf("%d\n", res[i]);

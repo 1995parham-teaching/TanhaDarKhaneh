@@ -20,7 +20,7 @@ int main() {
   printf("*pi + 1: %d\n", *pi + 1); // 10 + 1 = 11
   // *(pi + 1) == pi[1]
   printf("*(pi + 1): %d\n", *(pi + 1)); // 20
-  printf("pi[1]: %d\n", pi[1]); // 20
+  printf("pi[1]: %d\n", pi[1]);         // 20
 
   printf("pi[2]: %d\n", pi[2]); // 30
 }

@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 // do not return i's address
 int *return_pointer(int *p, int i) {
   // static int s = 10; // you can return its address
@@ -8,7 +7,6 @@ int *return_pointer(int *p, int i) {
 
   return p;
 }
-
 
 int main() {
   int i = 78;

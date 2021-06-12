@@ -20,15 +20,15 @@ int tokenizer(char *s, char *token, char result[][100]) {
 
 int main() {
   char *s[] = {
-    "Hello-123-73-123-2222-Parham-Salam",
-    "ABxyCD",
-    "ABxyCD",
+      "Hello-123-73-123-2222-Parham-Salam",
+      "ABxyCD",
+      "ABxyCD",
   };
 
   char *token[] = {
-    "-",
-    "yx",
-    "xy",
+      "-",
+      "yx",
+      "xy",
   };
 
   for (int j = 0; j < sizeof(s) / sizeof(char *); j++) {

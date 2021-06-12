@@ -28,7 +28,6 @@ void print_digits_right_to_left(int n) {
   printf("Finish with %d\n", n);
 }
 
-
 int main() {
   int n;
 

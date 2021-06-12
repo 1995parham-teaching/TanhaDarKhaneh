@@ -3,12 +3,11 @@
 
 struct node {
   int info;
-  struct node* next;
+  struct node *next;
 };
 
-
-struct node* node_construct(int id) {
-  struct node* nn = NULL;
+struct node *node_construct(int id) {
+  struct node *nn = NULL;
 
   nn = malloc(sizeof(struct node));
   if (nn == NULL) {
@@ -21,8 +20,8 @@ struct node* node_construct(int id) {
   return nn;
 }
 
-void list_print(struct node* list) {
-  struct node* current = NULL;
+void list_print(struct node *list) {
+  struct node *current = NULL;
   int i = 0;
 
   for (i = 0, current = list; current != NULL; current = current->next, i++) {
@@ -30,8 +29,8 @@ void list_print(struct node* list) {
   }
 }
 
-void list_push_back(struct node* list, struct node* nn) {
-  struct node* current = NULL;
+void list_push_back(struct node *list, struct node *nn) {
+  struct node *current = NULL;
 
   for (current = list; current->next != NULL; current = current->next) {
   }
@@ -40,10 +39,10 @@ void list_push_back(struct node* list, struct node* nn) {
   nn->next = NULL;
 }
 
-void list_pop_back(struct node* list) {
-  struct node* current = list;
+void list_pop_back(struct node *list) {
+  struct node *current = list;
 
-  while(current->next->next != NULL) {
+  while (current->next->next != NULL) {
     current = current->next;
   }
 
@@ -51,21 +50,23 @@ void list_pop_back(struct node* list) {
   current->next = NULL;
 }
 
-void list_push_front(struct node** plist, struct node* nn) {
+void list_push_front(struct node **plist, struct node *nn) {
   nn->next = *plist;
   *plist = nn;
 }
 
-void list_pop_next(struct node* adjacent_to_delete_node) {
+void list_pop_next(struct node *adjacent_to_delete_node) {
   struct node *to_delete = adjacent_to_delete_node->next;
   adjacent_to_delete_node->next = to_delete->next;
   free(to_delete);
 }
 
-void list_pop_by_info(struct node* list, int v) {
+void list_pop_by_info(struct node *list, int v) {
   // find a node before the node that contains v
   struct node *current = list;
-  for (current = list; current->next != NULL && current->next->info != v; current = current->next);
+  for (current = list; current->next != NULL && current->next->info != v;
+       current = current->next)
+    ;
 
   // there is no node that conaints v
   if (current->next == NULL) {
@@ -83,10 +84,10 @@ void list_pop_by_info(struct node* list, int v) {
 // list
 
 int main() {
-  struct node* list = NULL;
+  struct node *list = NULL;
 
-  list = node_construct(10); // node 01 = (10)
-  list->next = node_construct(12); // node 02 = (12)
+  list = node_construct(10);             // node 01 = (10)
+  list->next = node_construct(12);       // node 02 = (12)
   list->next->next = node_construct(13); // node 03 = (13)
 
   list_print(list);

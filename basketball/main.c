@@ -12,9 +12,7 @@ int n_participants;
 int teams[MAX_TEAMS];
 int n_teams;
 
-void add_team() {
-  n_teams++;
-}
+void add_team() { n_teams++; }
 
 int execute() {
   int winner = 0;
@@ -66,7 +64,8 @@ int main() {
   srand(time(NULL));
 
   while (1) {
-    printf("Welcome to our simulator [n_participants: %d] [n_teams: %d]\n", n_participants, n_teams);
+    printf("Welcome to our simulator [n_participants: %d] [n_teams: %d]\n",
+           n_participants, n_teams);
     printf("\n");
     printf("1) Add Team\n");
     printf("2) Vote for a Winner\n");
@@ -80,36 +79,36 @@ int main() {
     scanf("%d", &choice);
 
     switch (choice) {
-      case 1:
-        add_team();
-        break;
-      case 2:
-        printf("ID: ");
-        scanf("%lld", &id);
-        printf("Bet: ");
-        scanf("%d", &bet);
+    case 1:
+      add_team();
+      break;
+    case 2:
+      printf("ID: ");
+      scanf("%lld", &id);
+      printf("Bet: ");
+      scanf("%d", &bet);
 
-        if (vote_for_winner(id, bet) < 0) {
-          printf("insertion failed\n");
-        } else {
-          printf("insertion success\n");
-        }
-        break;
-      case 3:
-        winner = execute();
-        printf("team %d is a winner\n", winner);
+      if (vote_for_winner(id, bet) < 0) {
+        printf("insertion failed\n");
+      } else {
+        printf("insertion success\n");
+      }
+      break;
+    case 3:
+      winner = execute();
+      printf("team %d is a winner\n", winner);
 
-        for (int i = 0; i < n_teams; i++) {
-          printf("teams[%d]: %d\n", i, teams[i]);
+      for (int i = 0; i < n_teams; i++) {
+        printf("teams[%d]: %d\n", i, teams[i]);
+      }
+      for (int i = 0; i < n_participants; i++) {
+        if (winner == bets[i]) {
+          printf("%010lld win\n", ids[i]);
         }
-        for (int i = 0; i < n_participants; i++) {
-          if (winner == bets[i]) {
-            printf("%010lld win\n", ids[i]);
-          }
-        }
-        return 0;
-      default:
-        printf("invalid choice\n");
+      }
+      return 0;
+    default:
+      printf("invalid choice\n");
     }
   }
 }

@@ -22,11 +22,11 @@ int main() {
   while (1) {
     struct person p;
 
-    if (fgets(p.fname, sizeof(p.fname)/sizeof(char), fp) == NULL) {
+    if (fgets(p.fname, sizeof(p.fname) / sizeof(char), fp) == NULL) {
       break;
     }
     p.fname[strlen(p.fname) - 1] = '\0';
-    if (fgets(p.lname, sizeof(p.lname)/sizeof(char), fp) == NULL) {
+    if (fgets(p.lname, sizeof(p.lname) / sizeof(char), fp) == NULL) {
       break;
     }
     p.lname[strlen(p.lname) - 1] = '\0';
