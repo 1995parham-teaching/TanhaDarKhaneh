@@ -9,4 +9,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: compile with gcc
-        run: find . -type f -name '*.c' -exec gcc -Wall -c -std=c11 {} +
+        run: find . -type f -name '*.c' -exec gcc -Wall -Werror -c -std=c11 {} +
