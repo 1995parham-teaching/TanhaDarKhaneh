@@ -9,14 +9,18 @@ int cmp_func(const void *a, const void *b) {
   if (*ap > *bp) {
     return 1;
   }
+
   // a < b negative
   if (*ap < *bp) {
     return -1;
   }
+
   // a == b zero
   if (*ap == *bp) {
     return 0;
   }
+
+  return 0;
 }
 
 int main() {
