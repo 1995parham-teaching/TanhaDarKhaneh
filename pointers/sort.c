@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int cmp_func(void *a, void *b) {
+int cmp_func(const void *a, const void *b) {
   int *ap = (int *) a;
   int *bp = (int *) b;
 
