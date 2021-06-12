@@ -1,6 +1,6 @@
 # Tanha Dar Khaneh (a.k.a Home Alone)
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/1995parham/tanhadarkhaneh/build?label=build&logo=github&style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/1995parham/TanhaDarKhaneh/build?label=build&logo=github&style=flat-square)
 
 ## Introduction
 
