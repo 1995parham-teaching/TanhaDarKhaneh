@@ -1,5 +1,6 @@
 # Tanha Dar Khaneh (a.k.a Home Alone)
-[![Drone (cloud)](https://img.shields.io/drone/build/1995parham/TanhaDarKhaneh.svg?style=flat-square)](https://cloud.drone.io/1995parham/TanhaDarKhaneh)
+
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/1995parham/tanhadarkhaneh/build?label=build&logo=github&style=flat-square)
 
 ## Introduction
 Coronavirus makes all of us stay home and cancel all classes.
