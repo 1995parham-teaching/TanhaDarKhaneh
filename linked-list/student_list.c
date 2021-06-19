@@ -69,6 +69,25 @@ void list_push_next(struct node *next_to, struct student std) {
   next_to->next = nn;
 }
 
+void list_pop_next(struct node *next_to) {
+  //  next_to
+  //    |
+  //    n1 -> to_delete -> n3
+  //
+  //  next_to
+  //    |
+  //    n1 -> n3
+
+  if (next_to->next == NULL) {
+    return;
+  }
+
+  struct node *to_delete = next_to->next;
+
+  next_to->next = to_delete->next;
+  free(to_delete);
+}
+
 struct node *list_find_by_id(struct node *head, int id) {
   struct node *current;
 
@@ -79,6 +98,26 @@ struct node *list_find_by_id(struct node *head, int id) {
   }
 
   return NULL;
+}
+
+void list_remove_duplicate_id(struct node *head) {
+  struct node *current;
+
+  for (current = head; current != NULL; current = current->next) {
+    int id = current->data.id;
+    struct node *check = current;
+
+    // [1] -> 1 -> 1 -> 2 -> 1 -> NULL
+    // 1 -> x -> x -> [2] -> 1 -> NULL
+    // 1 -> x -> x -> 2 -> x -> [NULL]
+    while(check->next != NULL) {
+      if (check->next->data.id == id) {
+        list_pop_next(check);
+      } else {
+        check = check->next;
+      }
+    }
+  }
 }
 
 void list_print(struct node *head) {
@@ -101,13 +140,17 @@ int main() {
   struct student std1 = {"Parham Alvani", 9231058, 19.02};
   struct student std2 = {"Sepehr", 9231025, 20.0};
 
+  printf("check_push_back():\n");
+
   list_push_back(&head, std1);
   list_print(head);
 
-  printf("----\n");
+  printf("check_push_front():\n");
 
   list_push_front(&head, std2);
   list_print(head);
+
+  printf("check_find_by_id():\n");
 
   struct node *n;
 
@@ -118,8 +161,31 @@ int main() {
     printf("there is a node with id 9231016\n");
   }
 
+  printf("check_push_next():\n");
+
   struct student std3 = {"Saman", 9231057, 18.0};
   n = list_find_by_id(head, 9231025);
   list_push_next(n, std3);
+  list_print(head);
+
+  printf("check_pop_next():\n");
+
+  list_pop_next(n);
+  list_print(head);
+
+  printf("check_duplicate_by_id():\n");
+  list_push_back(&head, std1);
+  list_push_back(&head, std2);
+  list_push_back(&head, std1);
+  list_push_back(&head, std3);
+  list_push_back(&head, std3);
+  list_push_back(&head, std1);
+
+  printf("\t >> before:\n");
+  list_print(head);
+
+  list_remove_duplicate_id(head);
+
+  printf("\t >> after:\n");
   list_print(head);
 }
