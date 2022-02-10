@@ -1,7 +1,7 @@
 # Tanha Dar Khaneh (a.k.a Home Alone)
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/1995parham/TanhaDarKhaneh/build?label=build&logo=github&style=flat-square)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/1995parham/TanhaDarKhaneh/format?label=format&logo=github&style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/cng-by-example/TanhaDarKhaneh/build?label=build&logo=github&style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/cng-by-example/TanhaDarKhaneh/format?label=format&logo=github&style=flat-square)
 
 
 ## Introduction
@@ -9,7 +9,7 @@
 Coronavirus makes all of us stay home and cancel all classes.
 Here we want to demonstrate C programming with example projects and codes.
 These codes have companion videos that are available on youtube.
-These materials can be used with [C Programming Lectures](https://ce101.aut-ce.page/).
+These materials can be used with [C Programming Lectures](https://github.com/cng-by-example/c-lecture).
 
 ## Review
 
