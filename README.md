@@ -1,7 +1,7 @@
 # Tanha Dar Khaneh (a.k.a Home Alone)
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/cng-by-example/TanhaDarKhaneh/build?label=build&logo=github&style=flat-square)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/cng-by-example/TanhaDarKhaneh/format?label=format&logo=github&style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/1995parham-teaching/TanhaDarKhaneh/build?label=build&logo=github&style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/1995parham-teaching/TanhaDarKhaneh/format?label=format&logo=github&style=flat-square)
 
 
 ## Introduction
